@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>window.addEventListener('DOMContentLoaded', () => {
+            mainPage(), register();
+        });</script>
+    <script src="./login.js"></script>
+    <script src="./register.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="imgcontainer">
+        </div>
+
+        <div class="container">
+            <label for="e-mail"><b>E-mail</b></label>
+            <input value="some@email.com" type="text" class="email" placeholder="Enter E-mail" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input value="somepassword" type="password" class="pass" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="submit">Login</button>
+            <button type="submit" class="register">Register</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+    <label for="FirstName"><b>Firt Name</b></label>
+    <input value="Mitku" type="text" class="fname" placeholder="Enter Firt Name" name="fname">
+</body>
+
+</html>
