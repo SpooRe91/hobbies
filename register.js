@@ -11,7 +11,7 @@ function register() {
         if ([eMail, pass].every(el => el.value)) {
             fetch(`${url}`)
                 .then(res => {
-                    if (res.status >= 200 && res.status <= 300) {
+                    if (res.status >= 200 && res.status < 300) {
                         res.json()
                             .then(data => {
                                 if ((Object.keys(data).find(key => data[key].Email === eMail.value))) {

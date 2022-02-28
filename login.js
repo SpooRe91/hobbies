@@ -9,7 +9,8 @@ function mainPage() {
         if ([eMail, pass].every(el => el.value)) {
             fetch(`https://hobbies-7e6e8-default-rtdb.europe-west1.firebasedatabase.app/Users.json`)
                 .then(res => {
-                    if (res.status >= 200 && res.status <= 300) {
+                    if (res.status >= 200 && res.status < 300) {
+                    
                         res.json().then(data => {
                             let found = (Object.keys(data).find(key => data[key].Email === eMail.value))
                             if (found) {
